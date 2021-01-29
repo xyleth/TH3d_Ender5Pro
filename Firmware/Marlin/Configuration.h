@@ -37,7 +37,7 @@
 //#define CR10_S5
 //#define ENDER2
 //#define ENDER3
-//#define ENDER5
+#define ENDER5
 
 // If you are using our EZOut V1/V2 (connects to LCD header) filament sensor kit please follow the install guide
 // and then uncomment the #define EZOUT_ENABLE line below.
@@ -68,7 +68,7 @@
 
 // Ender 5 - Leadscrew Setting
 // If you have the new Ender 5/5 Pro Model that has the new 800steps/mm Z leadscrew uncomment the below option to set the correct steps/mm
-//#define ENDER5_NEW_LEADSCREW
+#define ENDER5_NEW_LEADSCREW
 
 //===========================================================================
 // *************************  END PRINTER SECTION   *************************
@@ -152,7 +152,7 @@
 // Example EStep Values: TH3D Aluminum Extruder - 95 ESteps, TH3D Tough Extruder - 410 ESteps, BMG Extruder - 415 ESteps
 // When installing a Tough Extruder or E3D Titan or Bondtech that is Geared you likely need to enable the REVERSE_E_MOTOR_DIRECTION option
 //#define CUSTOM_ESTEPS
-#define CUSTOM_ESTEPS_VALUE 410
+#define CUSTOM_ESTEPS_VALUE 100
 //#define REVERSE_E_MOTOR_DIRECTION
 
 // FILAMENT SENSOR UNLOAD SETTINGS -----------------
