@@ -70,6 +70,7 @@
 // If you have the new Ender 5/5 Pro Model that has the new 800steps/mm Z leadscrew uncomment the below option to set the correct steps/mm
 #define ENDER5_NEW_LEADSCREW
 
+
 //===========================================================================
 // *************************  END PRINTER SECTION   *************************
 //===========================================================================
@@ -264,7 +265,7 @@
 // ARC Support Override ----------------------------
 // Arc support is enabled by default on all builds but this takes up extra space. If you get compile errors due to the size being too large when enabling other options, then disable ARC_SUPPORT
 // by uncommenting the DISABLE_ARC_SUPPORT line below.
-//#define DISABLE_ARC_SUPPORT
+#define DISABLE_ARC_SUPPORT
 
 // Default PID tunings as per autotune for my machine
 #define DEFAULT_Kp 21.59
