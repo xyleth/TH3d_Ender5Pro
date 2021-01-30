@@ -56,7 +56,7 @@
 //#define TM3DAERO
 //#define TM3DAERO_EXTENDED
 //#define PETSFANG //This is the RIGHT mounted version - if using the left mount please use the CUSTOM_PROBE option.
-//#define CUSTOM_PROBE
+#define CUSTOM_PROBE
 
 // Ender 3 Specific Options
 
@@ -134,7 +134,7 @@
   * If the probe is left of the nozzle the offset on X is NEGATIVE
   * If the probe is in front of the nozzle the offset on Y is NEGATIVE
   */
-  #define NOZZLE_TO_PROBE_OFFSET { 10, 10, 0 }
+  #define NOZZLE_TO_PROBE_OFFSET { -43, -6, 0 }
 #endif
 
 
@@ -227,7 +227,7 @@
 // PID BED TEMPERATURE CONTROL ---------------------
 // If you want PID Bed Temperature control enable the below line. You will need to tune it for your machine.
 // See the PID Bed setup guide here: https://support.th3dstudio.com/hc/en-us/articles/360054750691
-//#define ENABLE_PIDBED
+#define ENABLE_PIDBED
 
 // FINE BABYSTEPPING -------------------------------
 // Enabling the below line will set the babystep resolution from 0.025mm to 0.010mm for finer control.
@@ -243,9 +243,9 @@
 // BL TOUCH ----------------------------------------
 // If you want to use the BL-Touch with our EZOut board uncomment the 2 lines below and set your servo pin (27 for all machines except Ender 2, Ender 2 uses 29).
 // You also need to uncomment #define CUSTOM_PROBE above and then enter in your offsets above in the CUSTOM PROBE section.
-//#define BLTOUCH
+#define BLTOUCH
 // Here is where you set your servo pin.
-//#define SERVO0_PIN 27
+#define SERVO0_PIN 27
 
 // MANUAL MESH LEVELING ----------------------------
 // If you want to use manual mesh leveling you can enable the below option. This is for generating a MANUAL mesh WITHOUT a probe. To change the mesh inset value change the EZABL_PROBE_EDGE setting above.
@@ -265,6 +265,11 @@
 // Arc support is enabled by default on all builds but this takes up extra space. If you get compile errors due to the size being too large when enabling other options, then disable ARC_SUPPORT
 // by uncommenting the DISABLE_ARC_SUPPORT line below.
 //#define DISABLE_ARC_SUPPORT
+
+// Default PID tunings as per autotune for my machine
+#define DEFAULT_Kp 21.59
+#define DEFAULT_Ki 1.78
+#define DEFAULT_Kd 65.43
 
 //===========================================================================
 // **********************  END CONFIGURATION SETTINGS   *********************
